@@ -9,8 +9,10 @@
     font-family: 'Josefin Sans', sans-serif;
     z-index: 999;
     transition: background-color 0.3s ease;
-    border-bottom: #666;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
+
 .topLeft,.topRight{
     flex: 3;
     display: flex;
@@ -26,7 +28,12 @@
    font-size: 20px;
    margin-right: 10px;
    color: #444;
-   cursor: pointer; 
+   cursor: pointer;
+   transition: color 0.2s ease;
+}
+
+.topIcon:hover {
+   color: #666;
 }
 
 .topImg{
@@ -35,6 +42,7 @@
     border-radius: 50%;
     object-fit: cover;
     margin-right: 10px;
+    border: 2px solid #f0f0f0;
 }
 
 .topList{
@@ -50,11 +58,35 @@
     font-size: 18px;
     font-weight: 300;
     cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.topListItem:hover {
+    color: #666;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
 }
 
 .topSearchIcon{
     font-size: 18px;
     color: #666;
     cursor: pointer;
-    margin-left: 15px;  
+    margin-left: 15px;
+}
+
+.topRight button {
+    background: none;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.topRight button:hover {
+    background-color: #f0f0f0;
 }
