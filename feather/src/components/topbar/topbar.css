@@ -1,6 +1,6 @@
 .top{
     width: 100%;
-    height: 50px;
+    height: 70px;
     background-color: white;
     position: sticky;
     top: 0;
@@ -11,13 +11,22 @@
     transition: background-color 0.3s ease;
     border-bottom: 1px solid #e0e0e0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .topLeft,.topRight{
     flex: 3;
     display: flex;
     align-items: center;
-    justify-content: center;
+}
+
+.topLeft {
+    justify-content: flex-start;
+}
+
+.topRight {
+    justify-content: flex-end;
 }
 
 .topCenter{
@@ -54,11 +63,13 @@
 }
 
 .topListItem{
-    margin-right: 20px;
-    font-size: 18px;
-    font-weight: 300;
-    cursor: pointer;
-    transition: color 0.2s ease;
+        list-style: none;
+        display: inline-block;
+        margin-right: 20px;
+        font-size: 18px;
+        cursor: pointer;
+        vertical-align: middle; 
+        line-height: 30px;         
 }
 
 .topListItem:hover {
@@ -68,6 +79,22 @@
 .link {
     text-decoration: none;
     color: inherit;
+}
+
+.blogLink {
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+}
+
+.blogLink::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
 }
 
 .topSearchIcon{

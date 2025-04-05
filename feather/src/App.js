@@ -5,10 +5,12 @@ import Single from "./pages/single/Single";
 import Write from "./pages/write/Write";
 import Login from "./pages/login/Login"; 
 import Register from "./pages/register/Register";
+import About from "./pages/About/About"; 
+import Contact from "./pages/contact/Contact"; 
 import { Routes, Route } from "react-router-dom";
 
 function App() {
-  const user = true;
+  const user = false;
   return (
       <div className="app">
         <Topbar />
@@ -19,6 +21,9 @@ function App() {
           <Route path="/write" element={user ? <Write /> : <Register />} />
           <Route path="/settings" element={user ? <Settings /> : <Register />} />
           <Route path="/post/:postId" element={<Single />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/blog" element={<Home />} />
+          <Route path="/contact" element={<Contact />} /> 
         </Routes>
       </div>
   );

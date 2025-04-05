@@ -1,9 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./topbar.css";
 
 export default function Topbar() {
-  const user = true;
+  const user = true; // Keep this as true
+  const navigate = useNavigate();
+  
+  const handleLogout = () => {
+    navigate("/login");
+  };
+
   return (
     <div className="top">
       <div className="topLeft">
@@ -18,18 +24,18 @@ export default function Topbar() {
             <Link className="link" to="/">HOME</Link>
           </li>
           <li className="topListItem">
-            <Link className="link" to="/">ABOUT</Link>
+            <Link className="link" to="/about">ABOUT</Link>
           </li>
           <li className="topListItem">
-            <Link className="link" to="/">CONTACT</Link>
+            <Link className="link" to="/contact">CONTACT</Link>
+          </li>
+          <li className="topListItem">
+            <Link className="link" to="/write">WRITE</Link>
           </li>
           {user && (
-            <li className="topListItem">
-              <Link className="link" to="/write">WRITE</Link>
+            <li className="topListItem" onClick={handleLogout}>
+              LOGOUT
             </li>
-          )}
-          {user && (
-            <li className="topListItem">LOGOUT</li>
           )}
         </ul>
       </div>
@@ -38,7 +44,7 @@ export default function Topbar() {
           <img
             className="topImg"
             src="https://images.pexels.com/photos/1858175/pexels-photo-1858175.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-            alt="profile"
+            alt=""
           />
         ) : (
           <ul className="topList">

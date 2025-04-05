@@ -1,0 +1,56 @@
+.contact {
+    display: flex;
+    padding: 50px;
+    gap: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  .contactLeft {
+    flex: 1;
+  }
+  
+  .contactLeft img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .contactRight {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .contactRight h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contactForm input,
+  .contactForm textarea {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .contactForm button {
+    padding: 12px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .contactForm button:hover {
+    background-color: #555;
+  }
+  
