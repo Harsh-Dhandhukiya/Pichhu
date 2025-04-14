@@ -1,25 +1,35 @@
+// Import the CSS styles for this component
 import "./singlePost.css";
 
+/**
+ * SinglePost component that displays a full blog post with its details
+ * @returns {JSX.Element} The rendered single post view
+ */
 export default function SinglePost() {
   return (
     <div className="singlePost">
       <div className="singlePostWrapper">
+        {/* Featured image for the blog post */}
         <img
           className="singlePostImg"
           src="https://images8.alphacoders.com/138/1386891.jpg"
-          alt=""
+          alt="Solo Leveling featured image"
         />
+        {/* Post title with edit controls */}
         <h1 className="singlePostTitle">
           How many Levels Sung Jin-woo could reach in Solo Leveling!?
+            {/* Edit and delete controls for post author */}
             <div className="singlePostEdit">
                 <i className="singlePostIcon fa-regular fa-pen-to-square"></i>
                 <i className="singlePostIcon far fa-trash-alt"></i>
             </div>
         </h1>
+        {/* Post metadata section */}
         <div className="singlePostInfo">
             <span className="singlePostAuthor">Author: <b>Harsh_H</b></span>
             <span className="singlePostDate">1 days ago</span>
         </div>
+        {/* Main post content */}
         <p className="singlePostDesc">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Quibusdam, provident. Quod, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit.

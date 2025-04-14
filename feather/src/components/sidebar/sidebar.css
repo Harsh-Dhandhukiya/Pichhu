@@ -1,3 +1,4 @@
+/* Main sidebar container - takes up 3/12 of the available space */
 .sidebar{
     flex: 3;
     margin: 20px;
@@ -9,12 +10,14 @@
     align-items: center;
 }
 
+/* Individual content sections within the sidebar */
 .sidebarItem{
     display: flex;
     flex-direction: column;
     align-items: center; 
 }
 
+/* Section title styling with decorative borders */
 .sidebarTitle{
     margin: 10px;
     padding: 5px;
@@ -29,6 +32,7 @@
     text-align: center;
 }
 
+/* Image styling within sidebar items */
 .sidebarItem > img{
     margin-top: 15px;
     width: 250px;
@@ -36,15 +40,18 @@
     margin-right: 10px; 
 }
 
+/* Paragraph text styling within sidebar items */
 .sidebarItem > p{
     padding: 30px;
 }
 
+/* List container for categories or tags */
 .sidebarList{
     list-style: none;
     margin-bottom: 30px; 
 }
 
+/* Individual list items in the sidebar */
 .sidebarListItem{
     display: inline-block;
     width: 50%;
@@ -52,6 +59,7 @@
     cursor: pointer;
 }
 
+/* Social media icons container */
 .sidebarSocial{
     margin-top: 15px;
     width: 250px;
@@ -60,6 +68,7 @@
     align-items: center;
 }
 
+/* Individual social media icon styling */
 .sidebarIcon{
     font-size: 16px;
     margin-left: 10px;

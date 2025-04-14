@@ -1,7 +1,10 @@
+/* Main header container with top margin to separate from navbar */
 .header {
     margin-top: 60px;
 }
 
+/* Container for the header title elements */
+/* Uses flexbox for vertical alignment of title elements */
 .headerTitles {
     display: flex;
     flex-direction: column;
@@ -10,6 +13,8 @@
     color: #444;
 }
 
+/* Small title styling - positioned absolutely for precise placement */
+/* Appears above the main title with italic styling */
 .headerTitleSm {
     position: absolute;
     top: 17%;
@@ -18,6 +23,8 @@
     font-style: italic;
 }
 
+/* Large title styling - the main blog title */
+/* Positioned absolutely with large font size for emphasis */
 .headerTitleLg {
     font-size: 100px;
     position: absolute;
@@ -25,6 +32,8 @@
     font-style: bold;
 }
 
+/* Header banner image styling */
+/* Full width with fixed height and cover object-fit to maintain aspect ratio */
 .headerImg {
     width: 100%;
     height: 450px;

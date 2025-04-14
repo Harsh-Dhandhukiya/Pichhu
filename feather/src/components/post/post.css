@@ -1,3 +1,4 @@
+/* Main post container - sets width and spacing for each post card */
 .post {
     width: 385px;
     margin: 0px 25px 40px 25px;
@@ -7,6 +8,7 @@
     margin-left: auto;
 }
 
+/* Post image styling (legacy selector - see .postImage below) */
 .postImg {
     width: 100%;
     height: 280px;
@@ -14,6 +16,7 @@
     border-radius: 7px; 
 }
 
+/* Container for all post information below the image */
 .postInfo {
     display: flex;
     flex-direction: column;
@@ -21,6 +24,7 @@
     width: 100%;
 }
 
+/* Category label styling - uses warm gold color for emphasis */
 .postCat {
     font-family: 'Varela Round', sans-serif;
     font-size: 11px;
@@ -31,6 +35,7 @@
     cursor: pointer;
 }
 
+/* Post title styling - large, bold font for readability */
 .postTitle {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 24px;
@@ -41,6 +46,7 @@
     width: 100%;
 }
 
+/* Post date styling - italic, subtle gray for secondary information */
 .postDate {
     font-family: 'Lora', serif;
     font-style: italic;
@@ -49,6 +55,8 @@
     margin-top: 15px; 
 }
 
+/* Post description/excerpt styling with text truncation */
+/* Limits display to 4 lines with ellipsis for overflow */
 .postDesc {
     font-family: 'Varela Round', sans-serif;
     font-size: 14px;
@@ -65,6 +73,7 @@
     padding: 0 10px;
 }
 
+/* Current post image styling with hover effects */
 .postImage {
     width: 100%;
     height: 280px;
@@ -74,6 +83,7 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Hover effect for post images - slight lift and enhanced shadow */
 .postImage:hover {
     transform: translateY(-3px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);

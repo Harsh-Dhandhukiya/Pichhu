@@ -1,3 +1,4 @@
+/* Background image with blur effect using pseudo-element */
 .register::before {
     content: "";
     position: absolute;
@@ -12,6 +13,7 @@
     transform: scale(1.1); /* Prevents blur edges from showing */
 }
 
+/* Main register container - centered vertically and horizontally */
 .register {
     height: calc(100vh - 50px);
     display: flex;
@@ -21,10 +23,12 @@
     background-size: cover;
 }
 
+/* Register page title styling */
 .registerTitle {
     font-size: 50px;
 }
 
+/* Registration form container with white background and shadow */
 .registerForm {
     margin-top: 20px;
     display: flex;
@@ -36,12 +40,14 @@
     min-width: 300px;
 }
 
+/* Form label styling */
 .registerForm > label {
     margin: 10px 0;
     color: #444;
     font-weight: 500;
 }
 
+/* Input field styling with light background */
 .registerInput {
     padding: 12px;
     background-color: #f5f5f5;
@@ -50,6 +56,7 @@
     margin-bottom: 10px;
 }
 
+/* Register button styling with teal color */
 .registerButton {
     margin-top: 20px;
     cursor: pointer;
@@ -62,10 +69,12 @@
     transition: background-color 0.3s ease;
 }
 
+/* Hover effect for register button */
 .registerButton:hover {
     background-color: #006666;
 }
 
+/* Login button positioned in top-right corner */
 .registerLoginButton {
     position: absolute;
     top: 80px;  /* Reduced from 120px to move it upward */
@@ -80,12 +89,14 @@
     transition: all 0.3s ease;
 }
 
+/* Hover effect for login button with slight lift */
 .registerLoginButton:hover {
     background-color: #e57373;
     transform: translateY(-2px);
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+/* Error message styling with red color */
 .errorMessage {
   color: #e74c3c;
   font-size: 14px;

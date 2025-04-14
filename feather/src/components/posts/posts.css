@@ -1,9 +1,10 @@
+/* Posts container - main grid layout for blog post previews */
 .posts {
-    flex: 9;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px;
-    justify-content: flex-start;
-    gap: 20px;
-    padding: 20px;
+    flex: 9;             /* Takes up 9/10 of the available space in flex parent */
+    display: flex;        /* Uses flexbox for layout */
+    flex-wrap: wrap;      /* Allows posts to wrap to next line when container width is exceeded */
+    margin: 20px;         /* Adds spacing around the entire posts container */
+    justify-content: flex-start; /* Aligns posts to the start of the container */
+    gap: 20px;            /* Creates consistent spacing between post items */
+    padding: 20px;        /* Adds internal spacing within the posts container */
 }

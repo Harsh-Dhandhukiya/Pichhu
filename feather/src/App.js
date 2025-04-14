@@ -19,17 +19,33 @@ import Contact from "./pages/contact/Contact";
 // Router components from react-router-dom for navigation
 import { Routes, Route } from "react-router-dom";
 
+/**
+ * Main App component that handles routing and layout
+ * @returns {JSX.Element} The rendered application
+ */
 function App() {
+  // User authentication state - true means user is logged in
   const user = true;
+  
   return (
       <div className="app">
+        {/* Navigation bar displayed on all pages */}
         <Topbar />
+        
+        {/* Route configuration for the application */}
         <Routes>
+          {/* Home route - displays the main content */}
           <Route exact path="/" element={<Home />} />
+          
+          {/* Authentication routes with conditional rendering based on user state */}
           <Route path="/register" element={user ? <Home /> : <Register />} />
           <Route path="/login" element={user ? <Home /> : <Login />} />
+          
+          {/* Protected routes that require authentication */}
           <Route path="/write" element={user ? <Write /> : <Register />} />
           <Route path="/settings" element={user ? <Settings /> : <Register />} />
+          
+          {/* Content routes */}
           <Route path="/post/:postId" element={<Single />} />
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Home />} />

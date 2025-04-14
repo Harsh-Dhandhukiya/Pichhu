@@ -1,3 +1,5 @@
+/* Reset default margin and padding for the entire document */
+/* Prevent horizontal scrolling and set box-sizing model */
 body, html {
   margin: 0;
   padding: 0;
@@ -6,15 +8,20 @@ body, html {
   box-sizing: border-box;
 }
 
+/* Apply box-sizing inheritance to all elements for consistent sizing */
+/* This ensures padding and borders are included in element width calculations */
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
+/* Main app container styles */
+/* Prevents content from causing horizontal overflow */
 .app {
   max-width: 100%;
   overflow-x: hidden;
 }
 
+/* Ensure all images are responsive and maintain aspect ratio */
 img {
   max-width: 100%;
   height: auto;

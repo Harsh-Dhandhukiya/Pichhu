@@ -1,3 +1,4 @@
+/* Main contact page container with flexbox layout */
 .contact {
     display: flex;
     padding: 50px;
@@ -5,15 +6,18 @@
     font-family: 'Josefin Sans', sans-serif;
   }
   
+  /* Left column container - takes up equal space (1:1 ratio) */
   .contactLeft {
     flex: 1;
   }
   
+  /* Image styling within the left column */
   .contactLeft img {
     width: 100%;
     border-radius: 10px;
   }
   
+  /* Right column container for the contact form */
   .contactRight {
     flex: 1;
     display: flex;
@@ -21,17 +25,20 @@
     justify-content: center;
   }
   
+  /* Heading style for the contact form section */
   .contactRight h2 {
     font-size: 32px;
     margin-bottom: 20px;
   }
   
+  /* Contact form container with vertical layout */
   .contactForm {
     display: flex;
     flex-direction: column;
     gap: 15px;
   }
   
+  /* Shared styles for form input fields and textarea */
   .contactForm input,
   .contactForm textarea {
     padding: 12px;
@@ -40,6 +47,7 @@
     border-radius: 5px;
   }
   
+  /* Submit button styling with dark background */
   .contactForm button {
     padding: 12px;
     background-color: #333;
@@ -50,6 +58,7 @@
     font-weight: bold;
   }
   
+  /* Hover effect for the submit button */
   .contactForm button:hover {
     background-color: #555;
   }

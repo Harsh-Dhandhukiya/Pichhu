@@ -1,3 +1,4 @@
+/* Main navigation bar container - fixed at the top of the page */
 .top{
     width: 100%;
     height: 70px;
@@ -15,24 +16,29 @@
     box-sizing: border-box;
 }
 
+/* Left and right sections of the navigation bar - social icons and user profile */
 .topLeft,.topRight{
     flex: 3;
     display: flex;
     align-items: center;
 }
 
+/* Left section alignment */
 .topLeft {
     justify-content: flex-start;
 }
 
+/* Right section alignment */
 .topRight {
     justify-content: flex-end;
 }
 
+/* Center section of the navigation bar - main navigation links */
 .topCenter{
     flex: 6;
 }
 
+/* Social media icons styling */
 .topIcon{
    font-size: 20px;
    margin-right: 10px;
@@ -41,10 +47,12 @@
    transition: color 0.2s ease;
 }
 
+/* Hover effect for social icons */
 .topIcon:hover {
    color: #666;
 }
 
+/* User profile image styling */
 .topImg{
     width: 40px;
     height: 40px;
@@ -54,6 +62,7 @@
     border: 2px solid #f0f0f0;
 }
 
+/* Navigation links container */
 .topList{
     display: flex;
     justify-content: center;
@@ -62,6 +71,7 @@
     list-style: none; 
 }
 
+/* Individual navigation link items */
 .topListItem{
         list-style: none;
         display: inline-block;
@@ -72,21 +82,25 @@
         line-height: 30px;         
 }
 
+/* Hover effect for navigation links */
 .topListItem:hover {
     color: #666;
 }
 
+/* General link styling to remove default underline */
 .link {
     text-decoration: none;
     color: inherit;
 }
 
+/* Special styling for blog link */
 .blogLink {
     font-size: 16px;
     font-weight: 600;
     position: relative;
 }
 
+/* Underline effect for blog link */
 .blogLink::after {
     content: "";
     position: absolute;
@@ -97,6 +111,7 @@
     background-color: #333;
 }
 
+/* Search icon styling */
 .topSearchIcon{
     font-size: 18px;
     color: #666;
@@ -104,6 +119,7 @@
     margin-left: 15px;
 }
 
+/* Button styling in the top right section (e.g., logout) */
 .topRight button {
     background: none;
     border: none;
@@ -114,6 +130,7 @@
     transition: background-color 0.2s;
 }
 
+/* Hover effect for buttons */
 .topRight button:hover {
     background-color: #f0f0f0;
 }

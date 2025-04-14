@@ -1,42 +1,50 @@
+/* Main settings page container with flex layout */
 .settings{
     display: flex;
 }
 
+/* Content wrapper that takes up most of the space (9/12 ratio) */
 .settingsWrapper{
     flex: 9;
     padding: 20px; 
 }
 
+/* Header section with title and delete account option */
 .settingsTitle{
     display: flex;
     align-items: center;
     justify-content: space-between; 
 }
 
+/* Main title styling with coral color */
 .settingsUpdateTitle{
     font-size: 30px;
     margin-bottom: 20px;
     color: lightcoral; 
 }
 
+/* Delete account link styling with warning red color */
 .settingsDeleteTitle{
     color: red;
     font-size: 12px;
     cursor: pointer; 
 }
 
+/* Settings form container with vertical layout */
 .settingsForm{
     display: flex;
     flex-direction: column;
     /* align-items: center;  */
 }
 
+/* Profile picture section container */
 .settingsPP{
     display: flex;
     align-items: center;
     margin: 10px 0; 
 }
 
+/* Profile picture image styling */
 .settingsPP > img{
     height: 70px;
     width: 70px;
@@ -44,6 +52,7 @@
     object-fit: cover; 
 }
 
+/* Profile picture change icon styling */
 .settingsPPIcon{
     width: 25px;
     height: 25px;
@@ -58,11 +67,13 @@
     cursor: pointer; 
 }
 
+/* Form label styling */
 .settingsForm > label{
     font-size: 20px;
     margin-top: 20px;
 }
 
+/* Form input field styling with bottom border only */
 .settingsForm > input{
     color: gray;
     margin: 10px 0;
@@ -72,6 +83,7 @@
     width: 100%; 
 }
 
+/* Submit button styling with teal background */
 .settingsSubmitButton{
     width: 150px;
     align-self: center;

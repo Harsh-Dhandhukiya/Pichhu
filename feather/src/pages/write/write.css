@@ -1,7 +1,9 @@
+/* Main container for the write/create post page */
 .write {
   padding-top: 50px;
 }
 
+/* Featured image styling for the post preview */
 .writeImg {
   margin-left: 150px;
   width: 70vw;
@@ -10,16 +12,19 @@
   object-fit: cover; 
 }
 
+/* Form container with relative positioning for absolute elements */
 .writeForm {
   position: relative;
 }
 
+/* Container for form input groups with left margin */
 .writeFormGroup {
   margin-left: 150px;
   display: flex;
   align-items: center; 
 }
 
+/* File upload icon styling with circular shape */
 .writeIcon {
   width: 25px;
   height: 25px;
@@ -33,6 +38,7 @@
   cursor: pointer;
 }
 
+/* Title input field styling */
 .writeInput {
   font-size: 30px;
   border: none;
@@ -40,10 +46,12 @@
   width: 70vw; 
 }
 
+/* Remove default focus outline from input fields */
 .writeInput:focus {
   outline-style: none; 
 }
 
+/* Main content textarea styling */
 .writeText {
   font-size: 20px;
   height: 100vh;
@@ -53,6 +61,7 @@
   /* overflow-y: scroll;  */
 }
 
+/* Submit button styling with absolute positioning */
 .writeSubmit {
   position: absolute;
   top: 20px;
